@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/chalana1995/MERNG-Stack/issues"
   },
-  "homepage": "https://github.com/chalana1995/MERNG-Stack#readme"
+  "homepage": "https://github.com/chalana1995/MERNG-Stack#readme",
+  "dependencies": {
+    "apollo-server": "^3.0.2",
+    "graphql": "^15.5.1",
+    "mongoose": "^5.13.4"
+  }
 }
