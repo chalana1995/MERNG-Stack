@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,13 @@
   "homepage": "https://github.com/chalana1995/MERNG-Stack#readme",
   "dependencies": {
     "apollo-server": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
     "graphql": "^15.5.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
