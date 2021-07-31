@@ -13,8 +13,7 @@ type User {
   email: String!
   token:String!
   userName: String!
-  createdAt: String!
-  
+  createdAt: String! 
 }
 
 input RegisterInput {
@@ -25,9 +24,13 @@ input RegisterInput {
 }
   type Query{
      getposts: [Post]
+     getpost(postId: ID!): Post
   }
 
 type Mutation{
   register(registerInput: RegisterInput): User!
+  login(userName: String!, password: String!) : User!
+  createPost(body:String!): Post!
+  deletePost(postId: ID!): String!
 }
 `
