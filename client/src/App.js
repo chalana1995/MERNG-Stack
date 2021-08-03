@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react'
-
 import 'semantic-ui-css/semantic.min.css';
+
 
 import MenuBar from './components/MenuBar';
 import Home from './pages/Home';
@@ -21,5 +21,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
