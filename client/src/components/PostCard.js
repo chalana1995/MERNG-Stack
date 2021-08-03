@@ -4,6 +4,17 @@ import moment from 'moment';
 import { Link } from 'react-router-dom';
 
 function PostCard({ post: { body, createdAt, id, userName, likeCount, commentCount, likes } }) {
+
+const likePost = () => {
+    console.log("like post")
+}
+
+
+const commentPost = () => {
+    console.log("comment post")
+}
+
+
     return (
         <Card fluid>
             <Card.Content>
@@ -19,12 +30,20 @@ function PostCard({ post: { body, createdAt, id, userName, likeCount, commentCou
                 </Card.Description>
             </Card.Content>
             <Card.Content extra>
-                <Button as='div' labelPosition='right' >
+                <Button as='div' labelPosition='right' onClick={likePost}>
                     <Button color='teal' basic>
                         <Icon name='heart' />
                     </Button>
                     <Label basic color='teal' pointing='left'>
                         {likeCount}
+                    </Label>
+                </Button>
+                <Button as='div' labelPosition='right' onClick={commentPost}>
+                    <Button color='blue' basic>
+                        <Icon name='comment' />
+                    </Button>
+                    <Label basic color='blue' pointing='left'>
+                        {commentCount}
                     </Label>
                 </Button>
             </Card.Content>
