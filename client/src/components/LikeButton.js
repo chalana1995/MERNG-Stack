@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { gql, useMutation } from '@apollo/client';
 import { Card, Icon, Label, Image, Button } from 'semantic-ui-react';
 
-function LikeButton({user , post: { id, likes, likeCount } }) {
+function LikeButton({ user, post: { id, likes, likeCount } }) {
 
     const [liked, setLiked] = useState(false)
 
